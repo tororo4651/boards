@@ -3,3 +3,17 @@
 
 // 変数、ミックスイン、関数
 @use "../../global" as g;
+
+
+// プライマリ
+.primaryBtn {
+  display: inline-block;
+  width: 260px;
+  background-color: g.$accentColor;
+  color: g.$whiteColor;
+  font-size: 18px;
+  line-height: 47px;
+  border-radius: 4px;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(#000, 0.32);
+}

@@ -3,3 +3,11 @@
 
 // 変数、ミックスイン、関数
 @use "../../global" as g;
+
+
+.header {
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

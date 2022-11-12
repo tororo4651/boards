@@ -1,0 +1,69 @@
+// セクション・ニュース
+
+
+// 変数、ミックスイン、関数
+@use "../../../global/" as g;
+
+
+.newsSection {
+  background-color: g.$baseColor1;
+
+  &__inner {
+    position: relative;
+    padding-block: clamp(90px, 9vw, 120px);
+  }
+
+  &__heading {
+    position: absolute;
+    top: -0.6em;
+    left: 0;
+  }
+
+  &__articles {
+    // display: grid;
+    // grid-template-columns:
+    //   repeat(2, 1fr);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 3%;
+  }
+
+  &__article {
+    width: calc((100% - 3%) / 2);
+
+    &Image {
+      aspect-ratio: 1.5 / 1;
+      width: 100%;
+      object-fit: cover;
+
+      @supports not (aspect-ratio: 1.5 / 1) {
+        height: 180px;
+      }
+    }
+
+    &Heading {
+      margin-block: 1em 0.5em;
+      font-size: clamp(12px, 2vw, 20px);
+      min-height: 0vw;
+    }
+
+    &Text {
+      font-size: clamp(10px, 1.6vw, 14px);
+      max-width: 20em;
+    }
+  }
+
+
+  @include g.mq {
+
+    // &__articles {
+    //   grid-template-columns:
+    //     repeat(3, 1fr);
+    // }
+
+    &__article {
+      width: calc((100% - 3% * 2) / 3);
+    }
+  }
+}

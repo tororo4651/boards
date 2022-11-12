@@ -3,3 +3,66 @@
 
 // 変数、ミックスイン、関数
 @use "../../global" as g;
+
+
+.gNav {
+
+  // ボタン
+  &__btn {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &Icon {
+      font-size: 30px;
+
+      &--open {
+        color: g.$grayColor2;
+
+        .is-gNavOpen & {
+          display: none;
+        }
+      }
+
+      &--close {
+        display: none;
+        color: g.$whiteColor;
+
+        .is-gNavOpen & {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  // メニュー
+  &__list {
+    position: fixed;
+    inset: 0 -100% 0 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(#4E483A, 0.9);
+    color: g.$whiteColor;
+    transition: transform 0.3s ease-in-out;
+
+    .is-gNavOpen & {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+
+// 画面がスクロールされないようにする。
+html.is-gNavOpen,
+html.is-gNavOpen body {
+  position: fixed;
+  inset: 0;
+  overflow-y: hidden;
+}

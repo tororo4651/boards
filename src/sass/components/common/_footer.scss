@@ -1,5 +1,87 @@
 // フッター
 
 
-// 変数、ミックスイン、関数
+// 変数 / ミックスイン / 関数
 @use "../../global" as g;
+
+
+.footer {
+  padding-block: 70px;
+  display: grid;
+  row-gap: 50px;
+  justify-items: center;
+
+  &__sns {
+
+    &List {
+      display: flex;
+      column-gap: 24px;
+    }
+
+    &Link {
+      width: 36px;
+      aspect-ratio: 1 / 1;
+      clip-path: circle(50%);
+      display: grid;
+      place-items: center;
+      background-color: g.$grayColor3;
+      color: g.$whiteColor;
+
+      @supports not (aspect-ratio: 1 / 1) {
+        height: 36px;
+      }
+    }
+
+    &Icon {
+      font-size: 24px;
+    }
+  }
+
+  &__nav {
+
+    &List {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    &Item {
+      font-size: 13px;
+      color: g.$grayColor1;
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+    color: g.$grayColor1;
+  }
+
+
+  @include g.mq {
+    grid-template-columns:
+     auto auto;
+    grid-template-rows:
+      repeat(3, auto);
+    gap: 20px;
+    justify-items: normal;
+
+    &__link {
+      margin-block-end: 20px;
+    }
+
+    &__nav {
+
+      &List {
+        justify-content: flex-start;
+      }
+    }
+
+    &__sns {
+      grid-column: 2;
+      grid-row: 1 / -1;
+      justify-self: end;
+      align-self: center;
+    }
+  }
+}

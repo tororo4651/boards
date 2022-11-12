@@ -1,31 +1,42 @@
 // ベース
 
-
-// 変数、ミックスイン、関数
+// 変数 / ミックスイン / 関数
 @use "../global/" as g;
 
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-size: 100%;
 }
 
 body {
-  margin: 0;
+  font-family: sans-serif;
+  color: g.$textColor;
 }
 
-ul,
-ol {
+p {
+  line-height: 1.8;
+}
+
+ul {
   list-style-type: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
 }
 
 a {
   text-decoration-line: none;
   color: inherit;
+
+  &:hover {
+    filter: brightness(90%) contrast(120%);
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

@@ -1,0 +1,11 @@
+// ページ
+
+
+// トップページ
+.top {
+
+  &__section01,
+  &__section02 {
+    margin-block-end: clamp(90px, 9vw, 120px);
+  }
+}

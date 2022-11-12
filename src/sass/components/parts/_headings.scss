@@ -2,4 +2,40 @@
 
 
 // 変数、ミックスイン、関数
-@use "../../global" as g;
+@use "../../global/" as g;
+
+
+// プライマリ
+.primaryHeading {
+  font-size: clamp(30px, 3vw, 40px);
+  min-height: 0vw;
+  font-weight: 400;
+
+  &__en {
+    display: block;
+    width: 160px;
+    padding-block-start: 18px;
+    border-top: solid 1px g.$mainColor;
+    margin-block-start: clamp(18px, 1.76vw, 24px);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: g.$grayColor1;
+  }
+}
+
+
+
+// セカンダリ
+.secondaryHeading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(40px, 5.2vw, 70px);
+  min-height: 0vw;
+  font-weight: 300;
+
+  &__ja {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    color: g.$grayColor1;
+  }
+}

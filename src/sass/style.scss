@@ -5,7 +5,7 @@
 
 
 // レイアウト
-@use "layouts/_layouts.scss";
+@use "layouts/_layouts";
 
 
 
@@ -15,63 +15,40 @@
 // 見出し
 @use "components/parts/_headings.scss";
 
-// ボタン
-@use "components/parts/btns";
 
-// リンク
-@use "components/parts/_links.scss";
-
+// ボタン・プライマリ
+@use "components/parts/_btns.scss";
 
 
 
 // コンポーネント・共通
-
 // ヘッダー
-@use "components/common/header";
+@use "components/common/_header.scss";
 
 // グローバルナビゲーション
-@use "components/common/_gnav.scss";
+@use "components/common/_gnav";
 
 // フッター
-@use "components/common/_footer";
+@use "components/common/_footer.scss";
 
 
 
 
 // コンポーネント・その他
 
-// メインコンテンツ
-// トップページ
-@use "components/other/mains/_top-main.scss";
+// セクション・プライマリ
+@use "components/other/sections/primary-section";
+// セクション・ニュース
+@use "components/other/sections/news-section";
 
 
-// セクション
-@use "components/other/sections/_sections.scss";
-// トップページ
-@use "components/other/sections/_top-section.scss";
-
-
-// ディビジョン
-@use "components/other/divisions/_divisions.scss";
-
-
-// ヒーローイメージ・トープページ
+// ヒーローイメージ・トップページ
 @use "components/other/heroes/top-hero";
 
 
-// カルーセル・プライマリ
-@use "components/other/carousels/_primary-carousel.scss";
 
 
-// SNS
-@use "components/other/sns/_sns.scss";
+// ページ
 
-
-// 動画
-@use "components/other/videos/top-video";
-
-
-
-
-// ユーティリティクラス・Utilityクラス・汎用クラス・ヘルパークラス
-@use "utilities/_utilities.scss";
+// トップページ
+@use "pages";

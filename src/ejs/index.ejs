@@ -3,20 +3,143 @@
 
 <%- include('components/common/_head.ejs', top) %>
 
-
 <body class="top">
 
+<%- include('components/common/_header') %>
 
 
+<div class="topHero">
+  <div class="topHero__content l-container">
+    <h1 class="topHero__heading">Stationery Services</h1>
+
+    <p class="topHero__text">便利な道具とサービスをお届けします</p>
+
+    <a class="topHero__btn primaryBtn" href="#">無料で始める</a>
+  </div><!-- /.topHero__content -->
+</div><!-- /.topHero -->
+
+<section class="top__section01 primarySection l-container">
+  <div class="primarySection__content">
+    <h2 class="primarySection__heading primaryHeading">
+      日常のツールたち
+
+      <span class="primaryHeading__en">Convenient</span>
+    </h2>
+
+    <p class="primarySection__text">どこにでもある、誰でも使ったことがある、普段は存在を意識しないけどないと困るツールたち。日常をちょっと楽しくしてくれます。</p>
+  </div><!-- /.primarySection__content -->
+
+  <figure class="primarySection__figure">
+    <img class="primarySection__image" src="/images/top/tool.jpg" alt="" width="1600" height="1260">
+  </figure>
+</section>
+
+<section class="top__section02 primarySection primarySection--reverse l-container">
+  <div class="primarySection__content">
+    <h2 class="primarySection__heading primaryHeading">
+      効率化の手助け
+
+      <span class="primaryHeading__en">Helpful</span>
+    </h2>
+
+    <p class="primarySection__text">さまざまな作業を効率よく進めるためには、目的に応じて最適な道具を使うことが大切です。そんな道具たちが揃っています。</p>
+  </div><!-- /.primarySection__content -->
+
+  <figure class="primarySection__figure">
+    <img class="primarySection__image" src="/images/top/helpful.jpg" alt="" width="1600" height="1260">
+  </figure>
+</section>
+
+<section class="newsSection">
+  <div class="newsSection__inner l-container">
+
+    <h2 class="newsSection__heading secondaryHeading">
+      News Releases
+
+      <span class="secondaryHeading__ja">最新情報</span>
+    </h2>
+
+    <div class="newsSection__articles">
+      <article class="newsSection__article">
+        <a class="newsSection__articleLink" href="#">
+          <figure class="newsSection__articleFigure">
+            <img class="newsSection__articleImage" src="/images/top/news01.jpg" alt="" width="1000" height="750">
+          </figure>
+
+          <h3 class="newsSection__articleHeading">スパンコール</h3>
+
+          <p class="newsSection__articleText">キラキラと光を反射する装飾素材です。いつもの道具にアクセントを付けます。</p>
+        </a>
+      </article>
+
+      <article class="newsSection__article">
+        <a class="newsSection__articleLink" href="#">
+          <figure class="newsSection__articleFigure">
+            <img class="newsSection__articleImage" src="/images/top/news02.jpg" alt="" width="1000" height="750">
+          </figure>
+
+          <h3 class="newsSection__articleHeading">卓上ランタン</h3>
+
+          <p class="newsSection__articleText">手元に灯りが欲しいときに、便利でかわいい卓上ランタンです。</p>
+        </a>
+      </article>
+
+      <article class="newsSection__article">
+        <a class="newsSection__articleLink" href="#">
+          <figure class="newsSection__articleFigure">
+            <img class="newsSection__articleImage" src="/images/top/news03.jpg" alt="" width="1000" height="1000">
+          </figure>
+
+          <h3 class="newsSection__articleHeading">冊子印刷</h3>
+
+          <p class="newsSection__articleText">スタンダードプランにも手軽な冊子印刷が登場しました。</p>
+        </a>
+      </article>
+
+      <article class="newsSection__article">
+        <a class="newsSection__articleLink" href="#">
+          <figure class="newsSection__articleFigure">
+            <img class="newsSection__articleImage" src="/images/top/news04.jpg" alt="" width="1000" height="750">
+          </figure>
+
+          <h3 class="newsSection__articleHeading">マグネット</h3>
+
+          <p class="newsSection__articleText">メモやアイデアを貼り出しておくなら、かわいいマグネットがおすすめです。</p>
+        </a>
+      </article>
+
+      <article class="newsSection__article">
+        <a class="newsSection__articleLink" href="#">
+          <figure class="newsSection__articleFigure">
+            <img class="newsSection__articleImage" src="/images/top/news05.jpg" alt="" width="1000" height="750">
+          </figure>
+
+          <h3 class="newsSection__articleHeading">ビジネスノート</h3>
+
+          <p class="newsSection__articleText">書き心地や開きやすさにこだわった、ビジネス用のノートたちを紹介します。</p>
+        </a>
+      </article>
+
+      <article class="newsSection__article">
+        <a class="newsSection__articleLink" href="#">
+          <figure class="newsSection__articleFigure">
+            <img class="newsSection__articleImage" src="/images/top/news06.jpg" alt="" width="1000" height="750">
+          </figure>
+
+          <h3 class="newsSection__articleHeading">ボールペン</h3>
+
+          <p class="newsSection__articleText">スタイリッシュなボールペンで仕事環境の雰囲気を変えてみました。</p>
+        </a>
+      </article>
+    </div><!-- /.newsSection__articles -->
+
+  </div><!-- /.newsSection__inner.l-container -->
+</section>
 
 
+<%- include('components/common/_footer') %>
 
-
-
-
-
-
-<%- include('components/common/_script') %>
+<%- include('components/common/_script.ejs') %>
 
 </body>
 </html>

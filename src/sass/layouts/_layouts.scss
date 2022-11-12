@@ -1,5 +1,12 @@
 // レイアウト
 
 
-// 変数、ミックスイン、関数
+// 変数 / ミックスイン / 関数
 @use "../global" as g;
+
+
+// コンテナ
+.l-container {
+  width: min(92%, 1166px);
+  margin-inline: auto;
+}

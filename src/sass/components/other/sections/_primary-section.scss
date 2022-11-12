@@ -1,0 +1,35 @@
+// セクション・プライマリ
+
+
+// 変数 / ミックスイン / 関数
+@use "../../../global/_index.scss" as g;
+
+
+.primarySection {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(45px, 6vw, 80px);
+
+  &__heading {
+    margin-block-end: 36px;
+  }
+
+
+  @include g.mq {
+    flex-direction: row;
+    align-items: center;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    &__content {
+      flex: 1;
+      min-width: 17em;
+    }
+
+    &__figure {
+      flex: 2;
+    }
+  }
+}
