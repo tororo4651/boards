@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('../components/common/_head.ejs', service) %>
+
+<body class="service">
+
+<%- include('../components/common/_header.ejs') %>
+
+
+<img class="hero" src="/images/service/service.jpg" alt="" width="1920" height="564">
+
+<section class="serviceSection l-md-container">
+  <h1 class="serviceSection__heading primaryHeading">
+    サービス案内
+
+    <span class="primaryHeading__en">Services</span>
+  </h1>
+
+  <p class="serviceSection__text">身近にあふれるたくさんの文具や事務用品。こうしたステーショナリーは仕事に欠かせないものであるのと同時に、毎日を楽しくしてくれるものであり、クリエイティブを刺激してくれるものでもあります。</p>
+
+  <p class="serviceSection__text">そして、デジタル化が進んだ現在では、スマートフォンやパソコンの中で便利な道具が必要とされるようになっています。</p>
+
+  <p class="serviceSection__text">Boadsではサブスクリプションの形式で、さまざまな道具の提供、販売、貸し出しなどのサービスを展開しています。</p>
+
+  <p class="serviceSection__text">主要都市にある工房スペースでは、最新の３Dプリンターやレーザーカッター、旋盤などの各種工具などもご利用いただけます。</p>
+
+  <p class="serviceSection__text">もちろん、オンライン上の便利な制作・管理ツールも取り揃えていますので、どんどん活用してください。</p>
+</section>
+
+
+<section class="planSection">
+  <div class="planSection__inner l-container">
+
+    <h2 class="planSection__heading secondaryHeading">
+      Service Plans
+
+      <span class="secondaryHeading__ja">サービスプラン</span>
+    </h2>
+
+    <div class="planSection__plans">
+      <div class="planSection__plan">
+        <h3 class="planSection__planHeading">Free</h3>
+
+        <p class="planSection__planText">便利なオンラインツールを今すぐご利用いただけるプランです。</p>
+
+        <div class="planSection__planPrice">無料</div>
+
+        <a class="planSection__planBtn primaryBtn" href="#">使ってみる</a>
+      </div><!-- /.planSection__plan -->
+
+      <div class="planSection__plan">
+        <h3 class="planSection__planHeading">Standard</h3>
+
+        <p class="planSection__planText">厳選した最新ステーショナリーグッズを毎月お届けするスタンダードプランです。</p>
+
+        <div class="planSection__planPrice">980円/月</div>
+
+        <a class="planSection__planBtn primaryBtn primaryBtn--red" href="#">使ってみる</a>
+      </div><!-- /.planSection__plan -->
+
+      <div class="planSection__plan">
+        <h3 class="planSection__planHeading">Pro</h3>
+
+        <p class="planSection__planText">プロフェッショナルなツールの貸し出し、工房の利用など、さまざまなご要望にお応えするプランです。</p>
+
+        <div class="planSection__planPrice">2,800円/月</div>
+
+        <a class="planSection__planBtn primaryBtn primaryBtn--red" href="#">使ってみる</a>
+      </div><!-- /.planSection__plan -->
+    </div><!-- /.planSection__plans -->
+
+  </div><!-- /.planSection__inner.l-container -->
+</section>
+
+
+<%- include('../components/common/_footer') %>
+
+<%- include('../components/common/_script') %>
+
+</body>
+</html>

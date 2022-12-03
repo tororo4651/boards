@@ -1,0 +1,7 @@
+// ヒーローイメージ
+
+.hero {
+  max-height: 400px;
+  margin-block-end: clamp(60px, 6vw, 80px);
+  object-fit: cover;
+}

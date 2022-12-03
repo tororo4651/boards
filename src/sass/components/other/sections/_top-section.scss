@@ -1,5 +1,32 @@
 // セクション・トップページ
 
 
-// 変数、ミックスイン、関数
-@use "../../../global" as g;
+// 変数 / ミックスイン / 関数
+@use "../../../global/_index.scss" as g;
+
+
+.topSection {
+  margin-block-end: clamp(90px, 9vw, 120px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(45px, 6vw, 80px);
+
+
+  @include g.mq {
+    flex-direction: row;
+    align-items: center;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    &__content {
+      flex: 1;
+      min-width: 17em;
+    }
+
+    &__figure {
+      flex: 2;
+    }
+  }
+}

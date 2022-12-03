@@ -33,27 +33,44 @@
         color: g.$whiteColor;
 
         .is-gNavOpen & {
-          display: inline-block;
+          display: revert;
         }
       }
     }
   }
 
   // メニュー
-  &__list {
-    position: fixed;
-    inset: 0 -100% 0 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 45px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(#4E483A, 0.9);
-    color: g.$whiteColor;
-    transition: transform 0.3s ease-in-out;
+  @include g.mq(md-max) {
+    &__list {
+      position: fixed;
+      inset: 0 -100% 0 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(#4E483A, 0.9);
+      color: g.$whiteColor;
+      transition: transform 0.3s;
 
-    .is-gNavOpen & {
-      transform: translateX(-100%);
+      .is-gNavOpen & {
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  @include g.mq() {
+    &__btn {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      column-gap: 40px;
+    }
+
+    &__item {
+      color: g.$grayColor1;
     }
   }
 }

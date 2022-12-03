@@ -1,0 +1,68 @@
+// セクション・プラン
+
+
+// 変数、ミックスイン、関数
+@use "../../../global/" as g;
+
+
+.planSection {
+  background-color: g.$baseColor2;
+
+  &__inner {
+    position: relative;
+    padding-block: clamp(90px, 9vw, 120px);
+  }
+
+  &__heading {
+    position: absolute;
+    top: -0.6em;
+    left: 0;
+  }
+
+  &__plans {
+    display: grid;
+    gap: 27px;
+  }
+
+  &__plan {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 27px;
+    border-radius: 20px;
+    background-color: g.$whiteColor;
+
+    &Heading {
+      margin-block-end: 38px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 38px;
+      font-weight: 400;
+    }
+
+    &Text {
+      margin-block-end: 38px;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+
+    &Price {
+      margin-block-end: 22px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+  }
+
+
+  @include g.mq() {
+    &__plans {
+      grid-template-columns:
+        repeat(3, 1fr);
+    }
+
+    &__plan {
+
+      &Price {
+        margin-block-start: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// セクション・サービス
+
+
+// 変数、ミックスイン、関数
+@use "../../../global" as g;
+
+
+.serviceSection {
+  margin-block-end: clamp(90px, 9vw, 120px);
+
+  &__text {
+    font-size: clamp(16px, 2.4vw, 18px);
+
+    &:not(:last-of-type) {
+      margin-block-end: 1.8em;
+    }
+  }
+}

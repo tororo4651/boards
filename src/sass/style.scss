@@ -36,19 +36,16 @@
 
 // コンポーネント・その他
 
-// セクション・プライマリ
-@use "components/other/sections/primary-section";
+// セクション・トップページ
+@use "components/other/sections/top-section";
 // セクション・ニュース
 @use "components/other/sections/news-section";
+// セクション・サービス
+@use "components/other/sections/service-section";
+// セクション・プラン
+@use "components/other/sections/_plan-section.scss";
 
-
+// ヒーローイメージ
+@use "components/other/heroes/hero";
 // ヒーローイメージ・トップページ
 @use "components/other/heroes/top-hero";
-
-
-
-
-// ページ
-
-// トップページ
-@use "pages";

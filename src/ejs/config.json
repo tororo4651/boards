@@ -3,5 +3,10 @@
     "title": "Boards",
     "description": "Boards の説明文。",
     "author": "Boards の制作者。"
+  },
+  "service": {
+    "title": "サービス案内 | Boards",
+    "description": "サービス案内の説明文.",
+    "author": "サービス案内の製作者。"
   }
 }
